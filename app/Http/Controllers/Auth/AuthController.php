@@ -40,9 +40,8 @@ class AuthController extends Controller
     {
        $requests = $request->all();
         $user = User::where('fullname', '=', $requests['fullname'])
-                      ->where('email', '=', $requests['email'])
+                      ->where('phone', '=', $requests['phone'])
                       ->first();
-        dd($user);
         if(!$user)
         {            
             flash("We couldn't find a Shareholder with the information you provided. Try again");

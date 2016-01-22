@@ -10,9 +10,9 @@
             <div class="login-box">
                 {!! Form::open(['url'=>'account/checkuser' ])!!}
                         
-                    <input type="text" name="fullname" class="text" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Full Name';}" >
+                    <input type="text" name="fullname" class="text" placeholder="fullname" >
 
-                     <input type="email" name="email" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" >
+                     <input type="text" name="email" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" >
 
                     <input type="number" name="phone" placeholder="Phone Number">
                 

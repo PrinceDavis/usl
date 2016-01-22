@@ -26,7 +26,6 @@ class CheckUsersRequest extends Request
         return [
             'fullname' => 'required',
             'phone'=> 'required',
-            'email' => 'required|email',
         ];
     }
 }
